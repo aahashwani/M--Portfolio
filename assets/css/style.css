@@ -2,14 +2,15 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    border: 2px dotted black
 }
 body {
-    background-color: #424952;
+    background-color: rosybrown;
 }
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
+    background-color: whitesmoke;
     color: #424952;
 }
 
@@ -42,3 +43,69 @@ body {
     display: inline-block;
     margin-left: 25px;
 }
+
+.style-1 h2{
+    display: inline-block;
+    font-size: 48px;
+    color: pink;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    margin-left: 200px
+}
+
+.hero {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%
+}
+
+.demo-1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 200px
+}
+.work:first-child{
+    flex-basis:100%;
+}
+.work {
+    display: flex;
+    align-items: flex-end;
+    flex-basis: 50%;
+}
+.card {
+    width: 100%;
+    min-width: 400px;
+    min-height: 250px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%
+  }
+  #project-1{
+    background-image: url("../images/pleasure pier.jpg");
+    min-height: 400px;
+    text-align: bottom;
+  }
+  #project-2{
+    background-image: url("../images/imperial sugar diff view.jpg");
+  }
+  #project-3{
+    background-image: url("../images/IMG_0255.jpg");
+  }
+  #project-4{
+    background-image: url("../images/cloud building.jpg");
+  }
+  #project-5{
+    background-image: url("../images/close up moon abstract.png");
+  }
