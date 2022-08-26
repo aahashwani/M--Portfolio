@@ -2,25 +2,22 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 2px dotted black
+    /* border: 2px dotted black; */
 }
 body {
-    background-color: rosybrown;
+    background-color: #EEE5E3;
 }
+
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: whitesmoke;
-    color: #424952;
+    background-color: #424952;
+    color: #EEE5E3;
 }
 
 .header h1 {
     display: inline-block;
     font-size: 48px;
-}
-
-.header h1 .seo {
-    color: #d9dcd6;
 }
 
 .header nav {
@@ -46,18 +43,26 @@ body {
 
 .style-1 h2{
     display: inline-block;
-    font-size: 48px;
-    color: pink;
+    font-size: 40px;
+    color: #857B7B;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-a {
+.header a {
     color: black;
     text-decoration: none;
+    color: #EEE5E3;
 }
 
 p {
-    font-size: 16px;
-    margin-left: 200px
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 370px;
+    /* display: flex;
+    flex-wrap: wrap; */
+    position: relative;
+    top: -40px;
 }
 
 .hero {
@@ -71,31 +76,52 @@ p {
     background-size: 100%
 }
 
-.demo-1 {
+.projects {
+    list-style-type: none;
+    margin:0;
+    padding:60px;
+    /* border:3px dotted pink; */
     display: flex;
-    flex-wrap: wrap;
-    margin-left: 200px
-}
-.work:first-child{
-    flex-basis:100%;
-}
-.work {
-    display: flex;
-    align-items: flex-end;
     flex-basis: 50%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 300px;
+    position: relative;
+    top: -110px;
+    
 }
 .card {
+    flex: 1 0 40%;
     width: 100%;
     min-width: 400px;
     min-height: 250px;
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: 100%
+    background-size: 100%;
+    /* border:1px solid yellowgreen; */
+    margin:0.5em;
+    padding:0.5em;
+  }
+  .font-1 {
+    color: white;
+    position: relative;
+    bottom: -350px;
+    font-size: 30px;
+  }
+  .font {
+    color: white;
+    position: relative;
+    bottom: -200px;
+    font-size: 30px;
   }
   #project-1{
     background-image: url("../images/pleasure pier.jpg");
     min-height: 400px;
     text-align: bottom;
+    order: 0;
+    flex-basis: 80%;
+    /* border: 10px; */
   }
   #project-2{
     background-image: url("../images/imperial sugar diff view.jpg");
@@ -109,3 +135,16 @@ p {
   #project-5{
     background-image: url("../images/close up moon abstract.png");
   }
+  .info {
+    grid-column: span 9;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 25px;
+    position: relative;
+    top: -40px;
+    margin-left: 90px;
+}
+.info a{
+  color:navy;
+}
