@@ -39,6 +39,10 @@ body {
 .header nav ul li a {
     display: inline-block;
     margin-left: 25px;
+    
+}
+a {
+  color: white;
 }
 
 .style-1 h2{
@@ -114,9 +118,10 @@ p {
     position: relative;
     bottom: -200px;
     font-size: 30px;
+    
   }
   #project-1{
-    background-image: url("../images/pleasure pier.jpg");
+    background-image: url("../images/recipefinder.jpg");
     min-height: 400px;
     text-align: bottom;
     order: 0;
